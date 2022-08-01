@@ -4,7 +4,7 @@ import { Box } from "@mui/material";
 const ABout = () => {
   return (
     <Box>
-      
+      About
     </Box>
   )
 }

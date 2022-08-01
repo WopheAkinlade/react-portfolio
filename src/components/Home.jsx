@@ -1,10 +1,10 @@
 import React from 'react'
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 const Home = () => {
   return (
     <Box id="home">
-        
+      <Typography variant='h2'>Hi I'm Wofe</Typography>
     </Box>
   )
 }
