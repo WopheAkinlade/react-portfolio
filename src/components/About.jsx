@@ -1,12 +1,14 @@
 import React from 'react'
 import { Box } from "@mui/material";
+import TechStack from './TechStack';
 
-const ABout = () => {
+const About = () => {
   return (
-    <Box>
+    <Box height="100vh">
       About
+      <TechStack />
     </Box>
   )
 }
 
-export default ABout
+export default About

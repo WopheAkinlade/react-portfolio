@@ -1,12 +1,12 @@
 import React from 'react'
 import { Box } from "@mui/material";
 
-const Stack = () => {
+const TechStack = () => {
   return (
     <Box>
-      Stack
+      TechStack
     </Box>
   )
 }
 
-export default Stack
+export default TechStack

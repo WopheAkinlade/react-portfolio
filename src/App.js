@@ -1,5 +1,6 @@
 import { Box, createTheme, ThemeProvider } from "@mui/material";
 import { useState } from "react";
+import About from "./components/About";
 import Contact from "./components/Contact";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
@@ -17,8 +18,8 @@ const palette = {
   dark: {
     mode: "dark",
     background: {
-      default: "#000",
-      paper: "red",
+      default: "#222",
+      paper: "darkgray",
       toolbar: "#121321",
     },
     text: {
@@ -38,8 +39,8 @@ function App() {
       <Box bgcolor={"background.default"} color={"text.primary"}>
         <Navbar mode={mode} setMode={setMode} />
         <Home />
-        <Stack />
-        <Contact />
+        {/* <About />
+        <Contact /> */}
       </Box>
     </ThemeProvider>
   );
