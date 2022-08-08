@@ -42,6 +42,7 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 62,
   height: 34,
   padding: 7,
+  marginRight:20,
   "& .MuiSwitch-switchBase": {
     margin: 1,
     padding: 0,
@@ -102,13 +103,7 @@ const Navbar = ({ mode, setMode }) => {
           </Typography>
         </Link>
 
-        <Box ml={25} sx={{ ...box2, display: { xs: "none", md: "flex" } }}>
-          <MaterialUISwitch
-            onClick={() =>
-              mode === "light" ? setMode("dark") : setMode("light")
-            }
-          />
-
+        <Box sx={{ ...box2, display: { xs: "none", md: "flex" } }}>
           <BoxOfLinks display={{ xs: "none", md: "flex" }}>
             <Link href="#about" underline="hover" color="inherit">
               About Me
@@ -122,7 +117,18 @@ const Navbar = ({ mode, setMode }) => {
           </BoxOfLinks>
         </Box>
 
-        <Box sx={{ display:{xs:"flex",md:"none"}, justifyContent:"space-between"}}>
+        <MaterialUISwitch
+          onClick={() =>
+            mode === "light" ? setMode("dark") : setMode("light")
+          }
+        />
+
+        <Box
+          sx={{
+            display: { xs: "flex", md: "none" },
+            justifyContent: "space-between",
+          }}
+        >
           <MaterialUISwitch
             onClick={() =>
               mode === "light" ? setMode("dark") : setMode("light")
