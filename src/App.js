@@ -4,7 +4,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
-import Stack from "./components/TechStack";
+import TechStack from "./components/TechStack";
 
 const palette = {
   light: {
@@ -14,16 +14,21 @@ const palette = {
       paper: "white",
       toolbar: "white",
     },
+    text: {
+      primary:"black",
+      icon: "red"
+    },
   },
   dark: {
     mode: "dark",
     background: {
       default: "#222",
-      paper: "darkgray",
+      paper: "#111212",
       toolbar: "#121321",
     },
     text: {
       primary:"white",
+      icon: "#db0d0d"
     },
   },
 };

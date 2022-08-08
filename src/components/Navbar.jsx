@@ -11,7 +11,6 @@ import {
   Menu,
 } from "@mui/material";
 import { MenuOutlined } from "@mui/icons-material";
-import { fontSize } from "@mui/system";
 
 const gradientText = {
   backgroundImage:
