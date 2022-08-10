@@ -118,6 +118,7 @@ const Navbar = ({ mode, setMode }) => {
         </Box>
 
         <MaterialUISwitch
+          sx={{display:{xs:"none", md:"flex"}}}
           onClick={() =>
             mode === "light" ? setMode("dark") : setMode("light")
           }

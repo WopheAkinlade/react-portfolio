@@ -11,7 +11,7 @@ const palette = {
     mode: "light",
     background: {
       default: "white",
-      paper: "white",
+      paper: "#eee",
       toolbar: "white",
     },
     text: {
@@ -44,8 +44,8 @@ function App() {
       <Box bgcolor={"background.default"} color={"text.primary"}>
         <Navbar mode={mode} setMode={setMode} />
         <Home />
-        {/* <About />
-        <Contact /> */}
+        <About />
+        {/* <Contact /> */}
       </Box>
     </ThemeProvider>
   );

@@ -4,7 +4,7 @@ import { Box } from "@mui/material";
 const TechStack = () => {
   return (
     <Box>
-      TechStack
+      Stack
     </Box>
   )
 }
