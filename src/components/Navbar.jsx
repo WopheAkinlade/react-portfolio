@@ -12,13 +12,7 @@ import {
 } from "@mui/material";
 import { MenuOutlined } from "@mui/icons-material";
 
-const gradientText = {
-  backgroundImage:
-    "linear-gradient(90deg, rgba(38,37,37,1) 38%, rgba(203,110,110,1) 69%)",
-  backgroundSize: "100%",
-  backgroundClip: "text",
-  textFillColor: "transparent",
-};
+
 const MyToolbar = styled(Toolbar)(({ theme }) => ({
   backgroundColor: theme.palette.background.toolbar,
   color: theme.palette.text.primary,
@@ -92,6 +86,16 @@ const Navbar = ({ mode, setMode }) => {
   const handleClose = () => {
     setOpen(false);
   };
+
+  const gradientText = {
+    backgroundImage:
+      mode === "light" ? "linear-gradient(90deg, rgba(38,37,37,1) 38%, rgba(203,110,110,1) 69%)":
+      "linear-gradient(90deg, rgba(242, 237, 237) 38%, rgba(203,110,110,1) 69%)",
+    backgroundSize: "100%",
+    backgroundClip: "text",
+    textFillColor: "transparent",
+  };
+
   return (
     <AppBar position="sticky">
       <MyToolbar>
