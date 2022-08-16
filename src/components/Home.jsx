@@ -1,10 +1,11 @@
 import React from "react";
-import { Box, Link, styled, Typography, useMediaQuery } from "@mui/material";
+import { Box, Link, styled, Typography } from "@mui/material";
 import { Icon } from "@iconify/react";
 import githubIcon from "@iconify/icons-codicon/github";
 import twitterCircle from "@iconify/icons-jam/twitter-circle";
 import linkedinSquare from "@iconify/icons-jam/linkedin-square";
 import img1 from "../Images/undraw_programming_re_kg9v.svg";
+import darkImg1 from "../Images/darkImg.svg"
 
 const HomeBox = styled(Box)(({ theme }) => ({
   backgroundColor: theme.palette.background.default,
@@ -24,7 +25,7 @@ const IconTheme = styled(Link)(({ theme }) => ({
   },
 }));
 
-const Home = () => {
+const Home = ({mode}) => {
   return (
     <HomeBox
       id="home"
@@ -43,7 +44,7 @@ const Home = () => {
           Full-Stack developer and Project Manager
         </Typography>
         <Box display={{ xs: "block", md: "none" }} width="90%">
-          <img src={img1} alt="" style={{ width: "100%", marginTop: 30 }} />
+          <img src={mode === "light" ? img1 : darkImg1} alt="" style={{ width: "100%", marginTop: 30 }} />
         </Box>
 
         <Box mt={{ xs: 10, md: 35 }} mb={{ xs: 10, md: 0 }}>
@@ -67,7 +68,7 @@ const Home = () => {
         </Box>
       </Box>
       <Box display={{ xs: "none", md: "block" }}>
-        <img src={img1} style={{ width: "100%" }} alt="" />
+        <img src={mode === "light" ? img1 : darkImg1} style={{ width: "100%" }} alt="" />
       </Box>
     </HomeBox>
   );
