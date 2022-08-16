@@ -25,7 +25,6 @@ const IconTheme = styled(Link)(({ theme }) => ({
 }));
 
 const Home = () => {
-  
   return (
     <HomeBox
       id="home"
@@ -44,10 +43,10 @@ const Home = () => {
           Full-Stack developer and Project Manager
         </Typography>
         <Box display={{ xs: "block", md: "none" }} width="90%">
-          <img src={img1} alt="" style={{width:"100%", marginTop:30}} />
+          <img src={img1} alt="" style={{ width: "100%", marginTop: 30 }} />
         </Box>
 
-        <Box mt={{ xs: 10, md: 35 }} mb={{xs:10, md:0}}>
+        <Box mt={{ xs: 10, md: 35 }} mb={{ xs: 10, md: 0 }}>
           <Typography variant="h4" gutterBottom>
             Check me out🤗
           </Typography>
@@ -68,7 +67,7 @@ const Home = () => {
         </Box>
       </Box>
       <Box display={{ xs: "none", md: "block" }}>
-        <img src={img1} style={{width:"100%"}}alt="" />
+        <img src={img1} style={{ width: "100%" }} alt="" />
       </Box>
     </HomeBox>
   );

@@ -16,7 +16,7 @@ const palette = {
     },
     text: {
       primary:"black",
-      icon: "red"
+      icon: "#CB6E6E"
     },
   },
   dark: {
@@ -28,7 +28,7 @@ const palette = {
     },
     text: {
       primary:"white",
-      icon: "#db0d0d"
+      icon: "#CB6E6E"
     },
   },
 };
