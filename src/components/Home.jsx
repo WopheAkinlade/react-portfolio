@@ -1,19 +1,18 @@
 import React from "react";
-import { Box, Link, styled, Typography } from "@mui/material";
+import { Box, Link, styled, Typography, useMediaQuery } from "@mui/material";
 import { Icon } from "@iconify/react";
 import githubIcon from "@iconify/icons-codicon/github";
 import twitterCircle from "@iconify/icons-jam/twitter-circle";
 import linkedinSquare from "@iconify/icons-jam/linkedin-square";
-import laptopBg from "../Images/laptopBg.jpg";
-import img1 from "../Images/undraw_programming_re_kg9v.svg"
+import img1 from "../Images/undraw_programming_re_kg9v.svg";
 
 const HomeBox = styled(Box)(({ theme }) => ({
   backgroundColor: theme.palette.background.default,
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
-  width:"80%",
-  margin:"auto",
+  width: "80%",
+  margin: "auto",
 }));
 
 const IconTheme = styled(Link)(({ theme }) => ({
@@ -26,28 +25,29 @@ const IconTheme = styled(Link)(({ theme }) => ({
 }));
 
 const Home = () => {
+  
   return (
-    <HomeBox id="home" height="100vh">
+    <HomeBox
+      id="home"
+      height={{ md: "100vh" }}
+      flexDirection={{ xs: "column", md: "row" }}
+    >
       <Box
-        displaY="flex"
-        flexDirection="row"
         height="90%"
         // width="40%"
-        mt={{ sm: 25 }}
-        sx={{
-          // backgroundImage: `url(${laptopBg})`,
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
+        mt={{ sm: 10, md: 25 }}
       >
         <Typography variant="h2" fontWeight={400} color="#CB6E6E">
           Hi, I'm Wofe🥷🏾
         </Typography>
         <Typography variant="h5" pl={2} sx={{ width: { xs: "100%", sm: 430 } }}>
-          Full-Stack developer and Project Manager  
+          Full-Stack developer and Project Manager
         </Typography>
-        <Box mt={40}>
+        <Box display={{ xs: "block", md: "none" }} width="90%">
+          <img src={img1} alt="" style={{width:"100%", marginTop:30}} />
+        </Box>
+
+        <Box mt={{ xs: 10, md: 35 }} mb={{xs:10, md:0}}>
           <Typography variant="h4" gutterBottom>
             Check me out🤗
           </Typography>
@@ -67,7 +67,9 @@ const Home = () => {
           </Box>
         </Box>
       </Box>
-      <img src={img1} alt="" />
+      <Box display={{ xs: "none", md: "block" }}>
+        <img src={img1} style={{width:"100%"}}alt="" />
+      </Box>
     </HomeBox>
   );
 };

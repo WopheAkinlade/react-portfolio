@@ -34,6 +34,7 @@ const BoxOfLinks = styled(Box)({
 const box2 = {
   justifyContent: "space-between",
   width: "35%",
+  // backgroundColor: "red",
   alignItems: "baseline",
 };
 

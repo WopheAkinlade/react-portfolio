@@ -1,26 +1,34 @@
 import React from "react";
 import { Box, Stack, styled, Typography } from "@mui/material";
-import TechStack from "./TechStack";
-import img2 from "../Images/undraw_code_review_re_woeb.svg"
+import img2 from "../Images/undraw_code_review_re_woeb.svg";
 
-const AboutStack = styled(Stack)(({ theme }) => ({
+const AboutBox = styled(Stack)(({ theme }) => ({
   backgroundColor: theme.palette.background.paper,
-  height: "100vh",
   justifyContent: "space-between",
-  paddingLeft: 10,
+  paddingBottom:15,
 }));
 
 const About = () => {
   return (
-    <AboutStack direction="row" id="about">
+    <AboutBox
+      direction={{ xs: "column", md: "row" }}
+      // alignItems="center"
+      id="about"
+      paddingTop={10}
+    >
       <Box
-        width="40%"
+        width={{ xs: "90%", md: "60%" }}
         display="flex"
-        justifyContent="center"
+        // justifyContent="center"
         flexDirection="column"
-        pl={5}
+        pl={{xs:2, md:5}}
       >
-        <Typography variant="h2" fontWeight={400} color="#CB6E6E">
+        <Typography
+          variant="h2"
+          fontWeight={400}
+          color="#CB6E6E"
+          textAlign={{ xs: "center" }}
+        >
           About Me
         </Typography>
         <Typography paragraph variant="body1" fontSize={20} pl color="gray">
@@ -32,8 +40,14 @@ const About = () => {
           will be an asset to your business' endeavours.
         </Typography>
       </Box>
-      <img src={img2} height="50%" style={{alignSelf:"center", paddingRight:70}} alt="" />
-    </AboutStack>
+      <Box height="50%" width={{xs:"95%", md:"70%"}} pr={{xs:0, md:10}}>
+        <img
+          src={img2}
+          style={{ alignSelf: "center", width:"100%", height:"100%" }}
+          alt=""
+        />
+      </Box>
+    </AboutBox>
   );
 };
 

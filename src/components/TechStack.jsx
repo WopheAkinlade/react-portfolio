@@ -1,10 +1,12 @@
 import React from 'react'
-import { Box } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 
 const TechStack = () => {
   return (
-    <Box>
-      Stack
+    <Box height={{md:"100vh"}}>
+      <Grid>
+
+      </Grid>
     </Box>
   )
 }

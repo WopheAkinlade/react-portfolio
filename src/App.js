@@ -45,6 +45,7 @@ function App() {
         <Navbar mode={mode} setMode={setMode} />
         <Home />
         <About />
+        <TechStack />
         {/* <Contact /> */}
       </Box>
     </ThemeProvider>

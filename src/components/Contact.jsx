@@ -3,7 +3,7 @@ import { Box } from "@mui/material";
 
 const Contact = () => {
   return (
-    <Box height="100vh">
+    <Box height={{md:"100vh"}}>
       Contact
     </Box>
   )
