@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Stack, styled, Typography } from "@mui/material";
 import img2 from "../Images/undraw_code_review_re_woeb.svg";
+import darkImg2 from "../Images/darkImg2.svg"
 
 const AboutBox = styled(Stack)(({ theme }) => ({
   backgroundColor: theme.palette.background.paper,
@@ -8,7 +9,7 @@ const AboutBox = styled(Stack)(({ theme }) => ({
   paddingBottom:15,
 }));
 
-const About = () => {
+const About = ({ mode }) => {
   return (
     <AboutBox
       direction={{ xs: "column", md: "row" }}
@@ -40,9 +41,9 @@ const About = () => {
           will be an asset to your business' endeavours.
         </Typography>
       </Box>
-      <Box height="50%" width={{xs:"95%", md:"70%"}} pr={{xs:0, md:10}}>
+      <Box height="50%" margin="auto" width={{xs:"95%", md:"70%"}} pr={{xs:0, md:10}}>
         <img
-          src={img2}
+          src={mode === "light" ? img2 : darkImg2}
           style={{ alignSelf: "center", width:"100%", height:"100%" }}
           alt=""
         />

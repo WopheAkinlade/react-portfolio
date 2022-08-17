@@ -5,7 +5,7 @@ const TechStack = () => {
   return (
     <Box height={{md:"100vh"}}>
       <Grid>
-
+        
       </Grid>
     </Box>
   )

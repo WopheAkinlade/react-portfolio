@@ -1,7 +1,7 @@
 import { Box, createTheme, ThemeProvider } from "@mui/material";
 import { useState } from "react";
 import About from "./components/About";
-import Contact from "./components/Contact";
+// import Contact from "./components/Contact";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import TechStack from "./components/TechStack";
@@ -43,8 +43,8 @@ function App() {
     <ThemeProvider theme={theme}>
       <Box bgcolor={"background.default"} color={"text.primary"}>
         <Navbar mode={mode} setMode={setMode} />
-        <Home />
-        <About />
+        <Home mode={mode}/>
+        <About mode={mode}/>
         <TechStack />
         {/* <Contact /> */}
       </Box>
