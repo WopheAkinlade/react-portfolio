@@ -26,6 +26,10 @@ const IconTheme = styled(Link)(({ theme }) => ({
 }));
 
 const Home = ({mode}) => {
+
+  const year = new Date().toLocaleString(undefined, {year: "numeric"})
+  const exp = year - 2021
+
   return (
     <HomeBox
       id="home"
@@ -41,7 +45,7 @@ const Home = ({mode}) => {
           Hi, I'm Wofe🥷🏾
         </Typography>
         <Typography variant="h5" pl={2} sx={{ width: { xs: "100%", sm: 430 } }}>
-          Full-Stack developer and Project Manager
+          Full-Stack developer with {exp} year{exp > 1 ? "s" : ""} of experience.
         </Typography>
         <Box display={{ xs: "block", md: "none" }} width="90%">
           <img src={mode === "light" ? img1 : darkImg1} alt="" style={{ width: "100%", marginTop: 30 }} />
