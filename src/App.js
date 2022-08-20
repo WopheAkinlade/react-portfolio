@@ -4,7 +4,7 @@ import About from "./components/About";
 // import Contact from "./components/Contact";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
-import TechStack from "./components/TechStack";
+import Skills from "./components/Skills";
 
 const palette = {
   light: {
@@ -45,7 +45,7 @@ function App() {
         <Navbar mode={mode} setMode={setMode} />
         <Home mode={mode}/>
         <About mode={mode}/>
-        <TechStack />
+        <Skills />
         {/* <Contact /> */}
       </Box>
     </ThemeProvider>

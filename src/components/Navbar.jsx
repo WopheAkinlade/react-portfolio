@@ -113,7 +113,7 @@ const Navbar = ({ mode, setMode }) => {
             <Link href="#about" underline="hover" color="inherit">
               About Me
             </Link>
-            <Link href="#techStack" underline="hover" color="inherit">
+            <Link href="#skills" underline="hover" color="inherit">
               My Stack
             </Link>
             <Link href="#contact" underline="hover" color="inherit">
@@ -170,7 +170,7 @@ const Navbar = ({ mode, setMode }) => {
               <MenuItem>About Me</MenuItem>
             </Link>
             <Link
-              href="#techStack"
+              href="#skills"
               underline="hover"
               color="inherit"
               onClick={handleClose}
