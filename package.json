@@ -44,6 +44,7 @@
     "@iconify/icons-codicon": "^1.2.14",
     "@iconify/icons-jam": "^1.2.3",
     "@iconify/icons-logos": "^1.2.15",
+    "@iconify/icons-vscode-icons": "^1.2.12",
     "@iconify/react": "^3.2.2"
   }
 }
