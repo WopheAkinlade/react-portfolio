@@ -5,7 +5,7 @@ import githubIcon from "@iconify/icons-codicon/github";
 import twitterCircle from "@iconify/icons-jam/twitter-circle";
 import linkedinSquare from "@iconify/icons-jam/linkedin-square";
 import img1 from "../Images/undraw_programming_re_kg9v.svg";
-import darkImg1 from "../Images/darkImg.svg"
+import darkImg1 from "../Images/darkImg.svg";
 
 const HomeBox = styled(Box)(({ theme }) => ({
   backgroundColor: theme.palette.background.default,
@@ -25,10 +25,9 @@ const IconTheme = styled(Link)(({ theme }) => ({
   },
 }));
 
-const Home = ({mode}) => {
-
-  const year = new Date().toLocaleString(undefined, {year: "numeric"})
-  const exp = year - 2021
+const Home = ({ mode }) => {
+  const year = new Date().toLocaleString(undefined, { year: "numeric" });
+  const exp = year - 2021;
 
   return (
     <HomeBox
@@ -41,14 +40,24 @@ const Home = ({mode}) => {
         // width="40%"
         mt={{ sm: 10, md: 25 }}
       >
-        <Typography variant="h2" fontWeight={400} color="#CB6E6E">
+        <Typography
+          variant="h2"
+          fontWeight={400}
+          fontSize={{ xs: "10vw", md: 60 }}
+          color="#CB6E6E"
+        >
           Hi, I'm Wofe🥷🏾
         </Typography>
         <Typography variant="h5" pl={2} sx={{ width: { xs: "100%", sm: 430 } }}>
-          Full-Stack developer with {exp} year{exp > 1 ? "s" : ""} of experience.
+          Full-Stack developer with {exp} year{exp > 1 ? "s" : ""} of
+          experience.
         </Typography>
         <Box display={{ xs: "block", md: "none" }} width="90%">
-          <img src={mode === "light" ? img1 : darkImg1} alt="" style={{ width: "100%", marginTop: 30 }} />
+          <img
+            src={mode === "light" ? img1 : darkImg1}
+            alt=""
+            style={{ width: "100%", marginTop: 30 }}
+          />
         </Box>
 
         <Box mt={{ xs: 10, md: 35 }} mb={{ xs: 10, md: 0 }}>
@@ -72,7 +81,11 @@ const Home = ({mode}) => {
         </Box>
       </Box>
       <Box display={{ xs: "none", md: "block" }}>
-        <img src={mode === "light" ? img1 : darkImg1} style={{ width: "100%" }} alt="" />
+        <img
+          src={mode === "light" ? img1 : darkImg1}
+          style={{ width: "100%" }}
+          alt=""
+        />
       </Box>
     </HomeBox>
   );
