@@ -63,7 +63,7 @@ const Skills = () => {
                 alignItems="center"
               >
                 HTML
-                <Icon icon={icons.html5} width={60} height={60} />
+                <Icon icon={icons.fileTypeHtml} width={60} height={60} />
               </Typography>
               <Typography
                 variant="h4"
@@ -73,7 +73,7 @@ const Skills = () => {
                 alignItems="center"
               >
                 CSS
-                <Icon icon={icons.css3} width={60} height={60} />
+                <Icon icon={icons.fileTypeCss} width={60} height={60} />
               </Typography>
               <Typography
                 variant="h4"
