@@ -21,7 +21,7 @@ const IconTheme = styled(Link)(({ theme }) => ({
   transition: "300ms",
 
   ":hover": {
-    color: theme.palette.text.icon,
+    color: theme.palette.text.red,
   },
 }));
 
@@ -44,7 +44,7 @@ const Home = ({ mode }) => {
           variant="h2"
           fontWeight={400}
           fontSize={{ xs: "10vw", md: 60 }}
-          color="#CB6E6E"
+          color={"text.red"}
         >
           Hi, I'm Wofe🥷🏾
         </Typography>

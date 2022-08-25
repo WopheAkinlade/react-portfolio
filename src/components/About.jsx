@@ -27,14 +27,14 @@ const About = ({ mode }) => {
         <Typography
           variant="h2"
           fontWeight={400}
-          color="#CB6E6E"
+          color={"text.red"}
           textAlign={{ xs: "center" }}
-          fontSize={{ xs: "17vw", md: 60 }}
+          fontSize={{ xs: "13vw", md: 60 }}
           gutterBottom
         >
           About Me
         </Typography>
-        <Typography paragraph variant="body1" fontSize={20} pl color="gray">
+        <Typography paragraph variant="body1" fontSize={20} color="gray">
           I'm a young full-stack developer and project manager based in Lagos,
           Nigeria. I graduated from Aptech Computer Education with an Advanced
           Diploma in Software Engineering and I'm also an intern at Touch and

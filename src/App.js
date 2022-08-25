@@ -1,7 +1,7 @@
 import { Box, createTheme, ThemeProvider } from "@mui/material";
 import { useState } from "react";
 import About from "./components/About";
-// import Contact from "./components/Contact";
+import Contact from "./components/Contact";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
@@ -16,7 +16,7 @@ const palette = {
     },
     text: {
       primary:"black",
-      icon: "#CB6E6E"
+      red: "#CB6E6E"
     },
   },
   dark: {
@@ -28,7 +28,7 @@ const palette = {
     },
     text: {
       primary:"white",
-      icon: "#CB6E6E"
+      red: "#CB6E6E"
     },
   },
 };
@@ -46,7 +46,7 @@ function App() {
         <Home mode={mode}/>
         <About mode={mode}/>
         <Skills />
-        {/* <Contact /> */}
+        <Contact mode={mode}/>
       </Box>
     </ThemeProvider>
   );
