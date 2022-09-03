@@ -23,7 +23,7 @@ const palette = {
     mode: "dark",
     background: {
       default: "#222",
-      paper: "#111212",
+      paper: "#1c1c1c",
       toolbar: "#121321",
     },
     text: {
