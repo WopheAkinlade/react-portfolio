@@ -40,7 +40,8 @@ const Skills = () => {
         My Tech Stack includes:
       </Typography>
       <Grid
-        spacing={3}
+        spacing={{xs: 0, sm: 3, md:3}}
+        rowSpacing={{xs:2, sm:0}}
         width="97%"
         container
         m="auto"
