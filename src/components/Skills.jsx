@@ -28,7 +28,7 @@ const iconBox = {
 
 const Skills = () => {
   return (
-    <Box pt={5} pb={5}>
+    <Box id="skills" pt={5} pb={5}>
       <Typography
         variant="h3"
         fontSize={{ xs: 30, md: 50 }}

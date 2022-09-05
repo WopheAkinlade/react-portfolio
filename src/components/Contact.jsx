@@ -37,7 +37,7 @@ const Contact = ({ mode }) => {
   };
 
   return (
-    <Box height={{ md: "75vh" }} bgcolor={"background.paper"} pt={3}>
+    <Box id="contact" height={{ md: "75vh" }} bgcolor={"background.paper"} pt={3}>
       <Typography variant="h3" color={"text.red"} align="center" mb={8}>
         Need to drop a message?
       </Typography>
