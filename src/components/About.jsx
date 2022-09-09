@@ -29,7 +29,7 @@ const About = ({ mode }) => {
           fontWeight={400}
           color={"text.red"}
           textAlign={{ xs: "center" }}
-          fontSize={{ xs: "13vw", md: 60 }}
+          fontSize={{ xs: "13vw", sm: 60 }}
           gutterBottom
         >
           About Me

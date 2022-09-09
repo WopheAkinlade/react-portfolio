@@ -6,7 +6,7 @@ import { Icon } from "@iconify/react";
 const tile = {
   border: "2px solid #CB6E6E",
   borderRadius: 3,
-  height: "50vh",
+  height: "100%",
   paddingLeft: 1,
   paddingRight: 1,
   paddingTop: 2.5,
@@ -20,6 +20,7 @@ const underline = {
 
 const iconBox = {
   width: "90%",
+  height: "80%",
   margin: "auto",
   display: "flex",
   flexDirection: "column",
@@ -31,7 +32,7 @@ const Skills = () => {
     <Box id="skills" pt={5} pb={5}>
       <Typography
         variant="h3"
-        fontSize={{ xs: 30, md: 50 }}
+        fontSize={{ xs: "7vw", sm: 50 }}
         mb={3}
         fontWeight={400}
         align="center"
@@ -40,13 +41,15 @@ const Skills = () => {
         My Tech Stack includes:
       </Typography>
       <Grid
-        spacing={{xs: 0, sm: 3, md:3}}
-        rowSpacing={{xs:2, sm:0}}
-        width="97%"
+        columnSpacing={{xs: 0, sm: 3, md:3}}
+        rowSpacing={{xs:5, sm:0}}
+        width="90%"
         container
         m="auto"
         direction="row"
         justifyContent="center"
+        pl={{sm:3, md:5}}
+        pr={{sm:3, md:5}}
       >
         <Grid item xs={12} sm={4}>
           <Stack sx={tile}>

@@ -102,7 +102,7 @@ const Navbar = ({ mode, setMode }) => {
         <Link href="#home" underline="none" color="inherit">
           <Typography
             variant="h2"
-            sx={{ ...gradientText, fontSize: { xs: 35, md: 60 } }}
+            sx={{ ...gradientText, fontSize: { xs: "7vw", sm: 50, md: 60 } }}
           >
             Wophe The Dev
           </Typography>

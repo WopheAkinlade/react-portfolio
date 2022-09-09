@@ -16,13 +16,11 @@ const Contact = ({ mode }) => {
 
   const formStyle = {
     margin: "auto",
-    // width: "100%",
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
     paddingLeft: 5,
     paddingRight: 5,
-    // alignItems: "center",
   };
 
   const buttonStyle = {
@@ -37,8 +35,8 @@ const Contact = ({ mode }) => {
   };
 
   return (
-    <Box id="contact" height={{ md: "75vh" }} bgcolor={"background.paper"} pt={3}>
-      <Typography variant="h3" color={"text.red"} align="center" mb={8}>
+    <Box id="contact" bgcolor={"background.paper"} pt={3} pb={10}>
+      <Typography variant="h3" color={"text.red"} fontSize={{xs:30, sm: 50}} align="center" mb={{xs: 5, md:8}}>
         Need to drop a message?
       </Typography>
 
@@ -46,9 +44,9 @@ const Contact = ({ mode }) => {
         elevation={10}
         sx={{
           margin: "auto",
-          width: { xs: "95%", sm: "60%", md: "38%" },
+          width: { xs: "95%", sm: "60%", md: "40%" },
           pt: 2,
-          pb: 3,
+          pb: 2,
           backgroundColor: mode === "light" ? "#f2f2f2" : "black",
         }}
       >
