@@ -19,8 +19,9 @@ const Contact = ({ mode }) => {
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
-    paddingLeft: 5,
-    paddingRight: 5,
+    paddingTop: 10,
+    paddingLeft: 20,
+    paddingRight: 20,
   };
 
   const buttonStyle = {
