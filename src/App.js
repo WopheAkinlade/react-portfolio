@@ -51,7 +51,7 @@ function App() {
         <Navbar mode={mode} setMode={setMode} />
         <Home mode={mode}/>
         <About mode={mode}/>
-        <Skills />
+        <Skills mode={mode} />
         <Contact mode={mode}/>
       </Box>
     </ThemeProvider>

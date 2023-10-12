@@ -3,31 +3,31 @@ import { Box, Grid, Stack, Typography } from "@mui/material";
 import icons from "./imports";
 import { Icon } from "@iconify/react";
 
-const tile = {
-  border: "2px solid #CB6E6E",
-  borderRadius: 3,
-  height: "100%",
-  paddingLeft: 1,
-  paddingRight: 1,
-  paddingTop: 2.5,
-};
+const Skills = ({mode}) => {
+  const tile = {
+    border: mode === "dark" ? "2px solid #63110b" : "2px solid #CB6E6E",
+    borderRadius: 3,
+    height: "100%",
+    paddingLeft: 1,
+    paddingRight: 1,
+    paddingTop: 2.5,
+  };
+  
+  const underline = {
+    width: "90%",
+    backgroundColor: mode === "dark" ? "#63110b" : "#CB6E6E",
+    border: mode === "dark" ? "0.5px solid #63110b" : "0.5px solid #CB6E6E",
+  };
+  
+  const iconBox = {
+    width: "90%",
+    height: "80%",
+    margin: "auto",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+  };
 
-const underline = {
-  width: "90%",
-  backgroundColor: "#CB6E6E",
-  border: "0.5px solid #CB6E6E",
-};
-
-const iconBox = {
-  width: "90%",
-  height: "80%",
-  margin: "auto",
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-};
-
-const Skills = () => {
   return (
     <Box id="skills" pt={5} pb={5}>
       <Typography

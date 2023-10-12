@@ -7,7 +7,8 @@ const Contact = ({ mode }) => {
     height: 30,
     backgroundColor: mode === "dark" && "#333",
     color: mode === "dark" && "white",
-    outlineColor: mode === "dark" ? "#CB6E6E" : "#CB6E6E",
+    borderColor: mode === "dark" ? "#63110b" : "#CB6E6E",
+    outline: "none",
     border: "1px solid #CB6E6E",
     paddingLeft: 5,
     paddingBottom: 0,
@@ -37,7 +38,13 @@ const Contact = ({ mode }) => {
 
   return (
     <Box id="contact" bgcolor={"background.paper"} pt={3} pb={10}>
-      <Typography variant="h3" color={"text.red"} fontSize={{xs:30, sm: 50}} align="center" mb={{xs: 5, md:8}}>
+      <Typography
+        variant="h3"
+        color={"text.red"}
+        fontSize={{ xs: 30, sm: 50 }}
+        align="center"
+        mb={{ xs: 5, md: 8 }}
+      >
         Want to leave a message?
       </Typography>
 
@@ -70,15 +77,17 @@ const Contact = ({ mode }) => {
             style={inputStyle}
           />
 
-          <label htmlFor="message">Your message to me goes here⬇️</label>
-          <textarea
+          <label htmlFor="message">Your message to me goes here</label>
+          <textarea 
             style={{
               backgroundColor: mode === "dark" && "#333",
               color: mode === "dark" && "white",
               padding: 15,
               marginBottom: 10,
               border: "1px solid #CB6E6E",
-              outlineColor: mode === "dark" ? "#CB6E6E" : "#CB6E6E",
+              borderColor: mode === "dark" && "#63110b",
+              outline:"none",
+              resize: "none",
               borderRadius: 10,
             }}
             name="message"
@@ -87,7 +96,13 @@ const Contact = ({ mode }) => {
             rows="10"
           ></textarea>
 
-          <button type="submit" style={buttonStyle}>
+          <button
+            type="submit"
+            style={{
+              ...buttonStyle,
+              backgroundColor: mode === "light" ? "#CB6E6E" : "#63110b",
+            }}
+          >
             Send Message
           </button>
         </form>

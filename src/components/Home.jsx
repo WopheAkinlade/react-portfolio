@@ -25,6 +25,16 @@ const IconTheme = styled(Link)(({ theme }) => ({
   },
 }));
 
+const buttonStyle = {
+  color: "white",
+  height: 45,
+  width: 120,
+  fontSize: "1.1em",
+  border: "none",
+  borderRadius: 20,
+  marginLeft: 10,
+};
+
 const Home = ({ mode }) => {
   const year = new Date().toLocaleString(undefined, { year: "numeric" });
   const exp = year - 2021;
@@ -35,23 +45,36 @@ const Home = ({ mode }) => {
       height={{ md: "100vh" }}
       flexDirection={{ xs: "column", md: "row" }}
     >
-      <Box
-        height="90%"
-        // width="40%"
-        mt={{ sm: 10, md: 25 }}
-      >
-        <Typography
-          variant="h2"
-          fontWeight={400}
-          fontSize={{ xs: "10vw", md: 60 }}
-          color={"text.red"}
-        >
-          Hi, I'm Wofe🥷🏾
-        </Typography>
-        <Typography variant="h5" pl={2} sx={{ width: { xs: "100%", sm: 430 } }}>
-          Full-Stack developer with {exp} year{exp > 1 ? "s" : ""} of
-          experience.
-        </Typography>
+      <Box height="90%" mt={{ sm: 10, md: 25 }}>
+        <Box>
+          <Typography
+            variant="h2"
+            fontWeight={400}
+            fontSize={{ xs: "10vw", md: 60 }}
+            color={"text.red"}
+          >
+            Hi, I'm Wofe
+            <Icon icon="noto:ninja-medium-dark-skin-tone" />
+          </Typography>
+          <Typography
+            variant="h5"
+            pl={2}
+            mb={0.5}
+            sx={{ width: { xs: "100%", sm: 430 } }}
+          >
+            Frontend developer with {exp} year{exp > 1 ? "s" : ""} of
+            experience.
+          </Typography>
+
+          <button
+            style={{
+              ...buttonStyle,
+              backgroundColor: mode === "light" ? "#CB6E6E" : "#63110b",
+            }}
+          >
+            Download CV
+          </button>
+        </Box>
         <Box display={{ xs: "block", md: "none" }} width="90%">
           <img
             src={mode === "light" ? img1 : darkImg1}
@@ -62,7 +85,7 @@ const Home = ({ mode }) => {
 
         <Box mt={{ xs: 10, md: 35 }} mb={{ xs: 10, md: 0 }}>
           <Typography variant="h4" gutterBottom>
-            Check me out🤗
+            Check me out
           </Typography>
           <Box display="flex" justifyContent="space-between" width={200} pl={3}>
             <IconTheme href="https://github.com/WopheAkinlade" target="_blank">
