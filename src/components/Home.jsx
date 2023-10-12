@@ -27,12 +27,12 @@ const IconTheme = styled(Link)(({ theme }) => ({
 
 const buttonStyle = {
   color: "white",
-  height: 45,
-  width: 120,
+  padding: 10,
   fontSize: "1.1em",
   border: "none",
   borderRadius: 20,
   marginLeft: 10,
+  cursor: "pointer",
 };
 
 const Home = ({ mode }) => {
@@ -66,14 +66,16 @@ const Home = ({ mode }) => {
             experience.
           </Typography>
 
-          <button
-            style={{
-              ...buttonStyle,
-              backgroundColor: mode === "light" ? "#CB6E6E" : "#63110b",
-            }}
-          >
-            Download CV
-          </button>
+          <a target=".blank" href="https://drive.google.com/file/d/1ChouXBW8AA3XZj3B6jc2SWJcZ1S0vI-2/view?usp=sharing">
+            <button
+              style={{
+                ...buttonStyle,
+                backgroundColor: mode === "light" ? "#CB6E6E" : "#63110b",
+              }}
+            >
+              Download CV
+            </button>
+          </a>
         </Box>
         <Box display={{ xs: "block", md: "none" }} width="90%">
           <img

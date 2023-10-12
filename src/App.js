@@ -30,7 +30,7 @@ const palette = {
       toolbar: "#121321",
     },
     text: {
-      primary:"white",
+      primary:"#ddd",
       red: "#63110b"
     },
     button: {
