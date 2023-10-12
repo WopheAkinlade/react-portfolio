@@ -18,6 +18,9 @@ const palette = {
       primary:"black",
       red: "#CB6E6E"
     },
+    button: {
+      primary: "#CB6E6E",
+    }
   },
   dark: {
     mode: "dark",
@@ -28,8 +31,11 @@ const palette = {
     },
     text: {
       primary:"white",
-      red: "#CB6E6E"
+      red: "#63110b"
     },
+    button: {
+      primary: "#63110b",
+    }
   },
 };
 
