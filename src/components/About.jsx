@@ -20,7 +20,6 @@ const About = ({ mode }) => {
       <Box
         width={{ xs: "90%", md: "60%" }}
         display="flex"
-        // justifyContent="center"
         flexDirection="column"
         pl={{ xs: 2, md: 5 }}
       >
