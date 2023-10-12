@@ -13,7 +13,6 @@ const About = ({ mode }) => {
   return (
     <AboutBox
       direction={{ xs: "column", md: "row" }}
-      // alignItems="center"
       id="about"
       paddingTop={10}
     >
