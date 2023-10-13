@@ -34,6 +34,7 @@ const Contact = ({ mode }) => {
     border: "none",
     borderRadius: 20,
     margin: "auto",
+    cursor: "pointer",
   };
 
   return (
